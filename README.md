@@ -1,17 +1,17 @@
-# Ex1_AudioModem
+Ex1_AudioModem
 
 A simple audio modem project using OFDM over audio signals. This project is based on [romanz/amodem](https://github.com/romanz/amodem) and includes modifications for testing and experimenting with audio-to-audio digital communication.
 
-## Features
+Features
 
 - Send and receive messages using sound.
 - Works between two computers using speakers and microphones.
 - You can add noise and test how well it decodes under real-world conditions.
 - Built with Python and designed to be modular and configurable.
 
-## How to Run
+How to Run
 
-### Requirements
+Requirements
 
 - Python 3
 - Required packages:
@@ -23,16 +23,16 @@ A simple audio modem project using OFDM over audio signals. This project is base
 
 To install the Python packages:
 
-```bash
+bash
 pip install -r requirements.txt
 If sox is not installed, use:
 
-```bash
+bash
 sudo apt install sox
 Sending a Message
 To encode a message into an audio waveform:
 
-```bash
+bash
 echo "hello world" | amodem send > clean.wav
 This will create a WAV file with the modulated message.
 
